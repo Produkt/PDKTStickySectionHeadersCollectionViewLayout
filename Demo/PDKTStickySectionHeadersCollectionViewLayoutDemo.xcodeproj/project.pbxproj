@@ -13,7 +13,6 @@
 		883AB6B1187330E7007153A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6AF187330E7007153A1 /* InfoPlist.strings */; };
 		883AB6B3187330E7007153A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6B2187330E7007153A1 /* main.m */; };
 		883AB6B7187330E7007153A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6B6187330E7007153A1 /* AppDelegate.m */; };
-		883AB6BA187330E7007153A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6B8187330E7007153A1 /* Main.storyboard */; };
 		883AB6BD187330E7007153A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6BC187330E7007153A1 /* ViewController.m */; };
 		883AB6BF187330E7007153A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6BE187330E7007153A1 /* Images.xcassets */; };
 		883AB6C6187330E7007153A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883AB6C5187330E7007153A1 /* XCTest.framework */; };
@@ -21,6 +20,10 @@
 		883AB6C8187330E7007153A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883AB6AA187330E7007153A1 /* UIKit.framework */; };
 		883AB6D0187330E7007153A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6CE187330E7007153A1 /* InfoPlist.strings */; };
 		883AB6D2187330E7007153A1 /* PDKTStickySectionHeadersCollectionViewLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6D1187330E7007153A1 /* PDKTStickySectionHeadersCollectionViewLayoutDemoTests.m */; };
+		883AB6DC18733223007153A1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6DB18733223007153A1 /* ViewController.xib */; };
+		883AB6DF1873328B007153A1 /* CollectionViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6DE1873328B007153A1 /* CollectionViewManager.m */; };
+		883AB6E2187333B8007153A1 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6E1187333B8007153A1 /* CollectionViewCell.m */; };
+		883AB6E4187333D4007153A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6E3187333D4007153A1 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,6 @@
 		883AB6B4187330E7007153A1 /* PDKTStickySectionHeadersCollectionViewLayoutDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDKTStickySectionHeadersCollectionViewLayoutDemo-Prefix.pch"; sourceTree = "<group>"; };
 		883AB6B5187330E7007153A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		883AB6B6187330E7007153A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		883AB6B9187330E7007153A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883AB6BB187330E7007153A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		883AB6BC187330E7007153A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		883AB6BE187330E7007153A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,12 @@
 		883AB6CD187330E7007153A1 /* PDKTStickySectionHeadersCollectionViewLayoutDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PDKTStickySectionHeadersCollectionViewLayoutDemoTests-Info.plist"; sourceTree = "<group>"; };
 		883AB6CF187330E7007153A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		883AB6D1187330E7007153A1 /* PDKTStickySectionHeadersCollectionViewLayoutDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDKTStickySectionHeadersCollectionViewLayoutDemoTests.m; sourceTree = "<group>"; };
+		883AB6DB18733223007153A1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		883AB6DD1873328B007153A1 /* CollectionViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewManager.h; sourceTree = "<group>"; };
+		883AB6DE1873328B007153A1 /* CollectionViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewManager.m; sourceTree = "<group>"; };
+		883AB6E0187333B8007153A1 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		883AB6E1187333B8007153A1 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		883AB6E3187333D4007153A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +122,14 @@
 			children = (
 				883AB6B5187330E7007153A1 /* AppDelegate.h */,
 				883AB6B6187330E7007153A1 /* AppDelegate.m */,
-				883AB6B8187330E7007153A1 /* Main.storyboard */,
 				883AB6BB187330E7007153A1 /* ViewController.h */,
 				883AB6BC187330E7007153A1 /* ViewController.m */,
+				883AB6DB18733223007153A1 /* ViewController.xib */,
+				883AB6DD1873328B007153A1 /* CollectionViewManager.h */,
+				883AB6DE1873328B007153A1 /* CollectionViewManager.m */,
+				883AB6E0187333B8007153A1 /* CollectionViewCell.h */,
+				883AB6E1187333B8007153A1 /* CollectionViewCell.m */,
+				883AB6E3187333D4007153A1 /* CollectionViewCell.xib */,
 				883AB6BE187330E7007153A1 /* Images.xcassets */,
 				883AB6AD187330E7007153A1 /* Supporting Files */,
 			);
@@ -229,8 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				883AB6BF187330E7007153A1 /* Images.xcassets in Resources */,
+				883AB6DC18733223007153A1 /* ViewController.xib in Resources */,
+				883AB6E4187333D4007153A1 /* CollectionViewCell.xib in Resources */,
 				883AB6B1187330E7007153A1 /* InfoPlist.strings in Resources */,
-				883AB6BA187330E7007153A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883AB6DF1873328B007153A1 /* CollectionViewManager.m in Sources */,
+				883AB6E2187333B8007153A1 /* CollectionViewCell.m in Sources */,
 				883AB6BD187330E7007153A1 /* ViewController.m in Sources */,
 				883AB6B7187330E7007153A1 /* AppDelegate.m in Sources */,
 				883AB6B3187330E7007153A1 /* main.m in Sources */,
@@ -280,14 +296,6 @@
 				883AB6B0187330E7007153A1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		883AB6B8187330E7007153A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				883AB6B9187330E7007153A1 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		883AB6CE187330E7007153A1 /* InfoPlist.strings */ = {
@@ -460,6 +468,7 @@
 				883AB6D7187330E7007153A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		883AB6D8187330E7007153A1 /* Build configuration list for PBXNativeTarget "PDKTStickySectionHeadersCollectionViewLayoutDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +477,7 @@
 				883AB6DA187330E7007153A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
