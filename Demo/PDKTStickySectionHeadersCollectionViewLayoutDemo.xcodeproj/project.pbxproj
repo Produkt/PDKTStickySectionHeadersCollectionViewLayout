@@ -24,6 +24,9 @@
 		883AB6DF1873328B007153A1 /* CollectionViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6DE1873328B007153A1 /* CollectionViewManager.m */; };
 		883AB6E2187333B8007153A1 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6E1187333B8007153A1 /* CollectionViewCell.m */; };
 		883AB6E4187333D4007153A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6E3187333D4007153A1 /* CollectionViewCell.xib */; };
+		883AB6E71873385F007153A1 /* CollectionViewSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6E61873385F007153A1 /* CollectionViewSectionHeader.m */; };
+		883AB6E918733890007153A1 /* CollectionViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883AB6E818733890007153A1 /* CollectionViewSectionHeader.xib */; };
+		883AB6EF18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 883AB6EE18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,11 @@
 		883AB6E0187333B8007153A1 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		883AB6E1187333B8007153A1 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		883AB6E3187333D4007153A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		883AB6E51873385F007153A1 /* CollectionViewSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewSectionHeader.h; sourceTree = "<group>"; };
+		883AB6E61873385F007153A1 /* CollectionViewSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewSectionHeader.m; sourceTree = "<group>"; };
+		883AB6E818733890007153A1 /* CollectionViewSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewSectionHeader.xib; sourceTree = "<group>"; };
+		883AB6ED18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKTStickySectionHeadersCollectionViewLayout.h; sourceTree = "<group>"; };
+		883AB6EE18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKTStickySectionHeadersCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,10 @@
 				883AB6E0187333B8007153A1 /* CollectionViewCell.h */,
 				883AB6E1187333B8007153A1 /* CollectionViewCell.m */,
 				883AB6E3187333D4007153A1 /* CollectionViewCell.xib */,
+				883AB6E51873385F007153A1 /* CollectionViewSectionHeader.h */,
+				883AB6E61873385F007153A1 /* CollectionViewSectionHeader.m */,
+				883AB6E818733890007153A1 /* CollectionViewSectionHeader.xib */,
+				883AB6EC18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout */,
 				883AB6BE187330E7007153A1 /* Images.xcassets */,
 				883AB6AD187330E7007153A1 /* Supporting Files */,
 			);
@@ -163,6 +175,16 @@
 				883AB6CE187330E7007153A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		883AB6EC18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				883AB6ED18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.h */,
+				883AB6EE18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.m */,
+			);
+			name = PDKTStickySectionHeadersCollectionViewLayout;
+			path = ../../PDKTStickySectionHeadersCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +266,7 @@
 				883AB6BF187330E7007153A1 /* Images.xcassets in Resources */,
 				883AB6DC18733223007153A1 /* ViewController.xib in Resources */,
 				883AB6E4187333D4007153A1 /* CollectionViewCell.xib in Resources */,
+				883AB6E918733890007153A1 /* CollectionViewSectionHeader.xib in Resources */,
 				883AB6B1187330E7007153A1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				883AB6DF1873328B007153A1 /* CollectionViewManager.m in Sources */,
+				883AB6E71873385F007153A1 /* CollectionViewSectionHeader.m in Sources */,
 				883AB6E2187333B8007153A1 /* CollectionViewCell.m in Sources */,
+				883AB6EF18733BF2007153A1 /* PDKTStickySectionHeadersCollectionViewLayout.m in Sources */,
 				883AB6BD187330E7007153A1 /* ViewController.m in Sources */,
 				883AB6B7187330E7007153A1 /* AppDelegate.m in Sources */,
 				883AB6B3187330E7007153A1 /* main.m in Sources */,

@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.collectionView.contentInset=UIEdgeInsetsMake(20, 0, 0, 0);
     self.collectionViewManager.collectionView=self.collectionView;
 }
 
