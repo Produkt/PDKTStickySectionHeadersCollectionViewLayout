@@ -12,7 +12,7 @@ Section header views stick to the top of the collection view, over it's section 
 
 ## Usage
 
-Simply add PDKTStickySectionHeadersCollectionViewLayout.h and PDKTStickySectionHeadersCollectionViewLayout.m files to your project and use it as your UICollectionViewLayout
+Simply add ```PDKTStickySectionHeadersCollectionViewLayout.h``` and ```PDKTStickySectionHeadersCollectionViewLayout.m``` files to your project and use it as your UICollectionViewLayout
 
 ## Compatibility
 - ```PDKTStickySectionHeadersCollectionViewLayout``` is compatible with iOS5.0+
