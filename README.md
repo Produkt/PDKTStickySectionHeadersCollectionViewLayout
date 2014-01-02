@@ -20,7 +20,7 @@ If you are using Interface Builder to configure your Collection View, simply swi
 
 
 ## Compatibility
-- ```PDKTStickySectionHeadersCollectionViewLayout``` is compatible with iOS5.0+
+- ```PDKTStickySectionHeadersCollectionViewLayout``` is compatible with iOS6.0+
 - ```PDKTStickySectionHeadersCollectionViewLayout``` requires ARC.
 
 ## License
