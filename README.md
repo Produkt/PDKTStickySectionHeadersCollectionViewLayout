@@ -18,6 +18,8 @@ If you are using Interface Builder to configure your Collection View, simply swi
 
 ![Interface Builder Config](https://raw.github.com/Produkt/PDKTStickySectionHeadersCollectionViewLayout/master/readme/ibconfig.png)
 
+## Notes
+```PDKTStickySectionHeadersCollectionViewLayout``` is a ```UICollectionViewFlowLayout``` subclass, so you also must confrom the  ```UICollectionViewFlowLayoutDelegate``` protocol in order to provide the required information about the cells to be drawn. 
 
 ## Compatibility
 - ```PDKTStickySectionHeadersCollectionViewLayout``` is compatible with iOS6.0+
