@@ -37,12 +37,6 @@
     for (UICollectionViewLayoutAttributes *itemAttributes in attributes) {
         if (itemAttributes.representedElementKind==UICollectionElementKindSectionHeader) {
             UICollectionViewLayoutAttributes *headerAttributes = itemAttributes;
-            UICollectionViewLayoutAttributes *lastItemAttributes=nil;
-            for (UICollectionViewLayoutAttributes *itemAttributesY in attributes) {
-                if (itemAttributesY.indexPath.section==headerAttributes.indexPath.section && (!lastItemAttributes || lastItemAttributes.indexPath.item<itemAttributesY.indexPath.item) ) {
-                    lastItemAttributes=itemAttributesY;
-                }
-            }
             CGPoint contentOffset = self.collectionView.contentOffset;
             CGPoint originInCollectionView=CGPointMake(headerAttributes.frame.origin.x-contentOffset.x, headerAttributes.frame.origin.y-contentOffset.y);
             originInCollectionView.y-=self.collectionView.contentInset.top;
@@ -50,8 +44,13 @@
             if (originInCollectionView.y<0) {
                 frame.origin.y+=(originInCollectionView.y*-1);
             }
-            if (CGRectGetMaxY(frame)>=CGRectGetMaxY(lastItemAttributes.frame)) {
-                frame.origin.y=CGRectGetMaxY(lastItemAttributes.frame)-frame.size.height;
+            NSUInteger numberOfSections=[self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
+            if (numberOfSections>headerAttributes.indexPath.section+1) {
+                UICollectionViewLayoutAttributes *nextHeaderAttributes=[self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:headerAttributes.indexPath.section+1]];
+                CGFloat maxY=nextHeaderAttributes.frame.origin.y;
+                if (CGRectGetMaxY(frame)>=maxY) {
+                    frame.origin.y=maxY-frame.size.height;
+                }
             }
             headerAttributes.frame = frame;
             headerAttributes.zIndex = 1024;
