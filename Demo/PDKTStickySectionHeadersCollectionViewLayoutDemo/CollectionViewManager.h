@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PDKTStickySectionHeadersCollectionViewLayout.h"
 
-@interface CollectionViewManager : NSObject<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface CollectionViewManager : NSObject<UICollectionViewDataSource,UICollectionViewDelegate,PDKTStickySectionHeadersCollectionViewLayoutDelegate>
 @property (weak,nonatomic) UICollectionView *collectionView;
 @end

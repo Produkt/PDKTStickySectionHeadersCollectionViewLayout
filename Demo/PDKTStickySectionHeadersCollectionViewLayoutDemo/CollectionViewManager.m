@@ -75,7 +75,11 @@ static NSUInteger const kNumberItemsPerSection = 10;
     CollectionViewSectionHeader *sectionHeaderView;
     static NSString *viewIdentifier=@"CollectionViewSectionHeader";
     sectionHeaderView=[self.collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:viewIdentifier forIndexPath:indexPath];
-    sectionHeaderView.titleLabel.text=[NSString stringWithFormat:@"Section %d",indexPath.section];
+    NSString *sectionHeaderTitle=[NSString stringWithFormat:@"Section %d",indexPath.section];
+    if (![self shouldStickHeaderToTopInSection:indexPath.section]) {
+        sectionHeaderTitle=[sectionHeaderTitle stringByAppendingString:@" (should not stick to top)"];
+    }
+    sectionHeaderView.titleLabel.text=sectionHeaderTitle;
     sectionHeaderView.titleLabel.textColor=[UIColor whiteColor];
     sectionHeaderView.backgroundColor=[UIColor blackColor];
     return sectionHeaderView;
@@ -97,5 +101,11 @@ static NSUInteger const kNumberItemsPerSection = 10;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     return CGSizeMake(self.collectionView.bounds.size.width, 60);
+}
+
+#pragma mark - PDKTStickySectionHeadersCollectionViewLayoutDelegate
+- (BOOL)shouldStickHeaderToTopInSection:(NSUInteger)section{
+    // Every section multiple of 3 doesn't stick to top
+    return (section>0 && section%3==0)?NO:YES;
 }
 @end
