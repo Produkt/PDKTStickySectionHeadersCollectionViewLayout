@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol PDKTStickySectionHeadersCollectionViewLayoutDelegate<UICollectionViewDelegateFlowLayout>
+@optional
+- (BOOL)shouldStickHeaderToTopInSection:(NSUInteger)section;
+@end
 @interface PDKTStickySectionHeadersCollectionViewLayout : UICollectionViewFlowLayout
 
 @end
