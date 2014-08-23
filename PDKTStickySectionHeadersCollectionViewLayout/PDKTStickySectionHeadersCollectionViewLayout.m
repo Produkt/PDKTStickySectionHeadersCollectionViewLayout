@@ -46,6 +46,7 @@
                 CGRect frame = headerAttributes.frame;
                 if (originInCollectionView.y<0) {
                     frame.origin.y+=(originInCollectionView.y*-1);
+                    frame.origin.y-=self.collectionView.contentInset.top;
                 }
                 NSUInteger numberOfSections=[self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
                 if (numberOfSections>headerAttributes.indexPath.section+1) {
