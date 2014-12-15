@@ -47,7 +47,10 @@
                 if (originInCollectionView.y<0) {
                     frame.origin.y+=(originInCollectionView.y*-1);
                 }
-                NSUInteger numberOfSections=[self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
+                NSInteger numberOfSections = 1;
+                if ([self.collectionView.dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
+                    numberOfSections = [self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
+                }
                 if (numberOfSections>headerAttributes.indexPath.section+1) {
                     UICollectionViewLayoutAttributes *nextHeaderAttributes=[self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:headerAttributes.indexPath.section+1]];
                     CGFloat maxY=nextHeaderAttributes.frame.origin.y;
